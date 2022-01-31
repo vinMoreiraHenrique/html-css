@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: royalblue;
+            margin: 0px
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;    
+        }
+
+        nav {
+            background-color: #7c7878;
+            box-shadow: 5px 5px 5px 5px/*1- deslocamento horizontal, 2-deslocamento vertical, 3- Blur, 4- spread, cor*/ rgba(22, 22, 22, 0.308);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            color:black;
+            vertical-align: super;
+        }
+
+        section#assuntos {
+            color: white;
+        }
+
+        main {
+            background-color:rgb(78, 78, 78);
+            padding: 10px;
+            margin: 10px;
+            border-top-left-radius: 20px;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        article > aside {
+            background-color: rgb(167, 164, 164);
+        }
+
+        article > p {
+            padding-left: 20px;
+        }
+
+        
+        footer {
+            background-color: wheat;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política  Lazer</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quis amet esse excepturi velit ab consequuntur sapiente cupiditate qui sint corporis, porro quam voluptate accusantium explicabo voluptas dignissimos et temporibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nesciunt magni quasi et, esse tenetur commodi atque harum sunt ex maiores quae illo cum doloremque optio est tempore. Corporis, incidunt!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam sint consectetur deleniti ad eaque esse animi, accusamus rem iure architecto ipsam ea laborum, tempore perferendis non. Nemo, omnis voluptatem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ratione enim illum illo quaerat sint corporis fugiat officia ducimus, magni commodi quod laborum. Officia sequi temporibus iste cumque nobis?</p>
+                
+
+                <aside>
+                    <p>Artigo escrito por <strong>Paul Atreides</strong></p>
+                </aside>
+            </article>
+
+
+            <article>
+                <h2>Duna</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio optio, consectetur in exercitationem ut praesentium soluta, similique odio, voluptatem iste nulla esse veritatis nihil laudantium cumque eum quaerat quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dicta odit illo quidem accusantium beatae dolorum in aliquam corrupti, aliquid illum doloribus neque veritatis suscipit a modi nostrum officiis! Architecto.</p>
+
+                <aside>
+                    <p>Artigo escrito por <strong>Frank Herbert</strong></p>
+                </aside>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vinícius Moreira Henrique</p>
+    </footer>
+</body>
+</html>
