@@ -138,16 +138,23 @@ nav {
     background-color: var(--cor0);
     padding: 10px;
     padding-left: 10px;
+    padding-bottom: 0px;
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.459);
+    writing-mode: horizontal-tb;
 }
 
-nav a {
+nav > a {
     text-decoration: none;
     color: white;
     font-family: var(--fonte-padrao);
     margin-right: 10px;
-    padding: 10.5px;
+    padding: 10px;
+    padding-bottom: 10px;
     transition-duration: 0.5s;
+    writing-mode: horizontal-tb;
+    max-inline-size: 4cm;
+    writing-mode: sideways-lr;
+    display: inline-block;
 }
 
 nav > a:hover {
@@ -156,6 +163,7 @@ nav > a:hover {
     color: black;
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
+    
 }
 
 
