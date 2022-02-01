@@ -148,7 +148,6 @@ nav > a {
     padding: 10.5px;
     transition-duration: 0.5s;
     text-align: center;
-    display: inline-block;
 }
 
 nav > a:hover {
