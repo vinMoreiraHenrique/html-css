@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: iDroid;
+    src: url('fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bebas-Neue;
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*criação de variáveis*/
+:root {
+    --cor0: #1A5C38;
+    --cor1: #46DB89;
+    --cor2: #2FA866;
+    --cor3: #C5EBD6;
+    --cor4: #1be25d; 
+    --cor5: #1be2a7;
+    --fonteh2cor:#3A7254; 
+    --lgradh2: #C5EBD6;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-seriff;
+    --fonte-destaque: 'Bebas-Neue', cursive;
+    --fonte-h2: 'iDroid';
+}
+/*criação de variáveis*/
+
+/*header {
+    text-align: center;
+    background-image: linear-gradient(to top, #1A5C38, #46DB89);
+    height: 200px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    padding-top: 20px;
+    font-family: 'Oswald-Variable';
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header fixa ao scroll da página.
+*/
+
+body {
+    background-color: var(--cor5);
+}
+
+main {
+    margin:auto;
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.493);
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    }
+
+main strong {
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+main a {
+    background-color: var(--cor1);
+}
+
+main img /*não pode colocar > por que tem mais de um nível antes de main, img pode estar dentro do main em qualquer nível.*/{
+    width: 100%;
+}
+
+main img.pequena {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+
+/*GAMBIARRA DO VÍDEO RESPONSIVO*/
+main div.video {
+    margin-bottom: 30px;
+    margin: 0px -15px 30px -15px;
+    padding: 20px 0px;
+    position: relative;
+    padding-bottom: 56%;
+    
+}
+
+div.video iframe  {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/*GAMBIARRA DO VÍDEO RESPONSIVO*/
+
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
+    min-height: 150px;
+    max-height: 300px;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.452);
+    padding-top: 40px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+}
+
+header > h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+}
+
+header > p {
+    
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+}
+
+nav {
+    background-color: var(--cor0);
+    padding: 10px;
+    box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.459);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrao);
+    margin-right: 15px;
+    padding: 10.5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+    color: black;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+a {
+    color: black;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+
+}
+
+a:hover{
+    color: white;
+}
+
+
+
+body {
+    background-color: var(--cor5);
+}
+
+
+article {
+    background-color: white;
+    padding: 15px;
+    font-family: var(--fonte-padrao);
+    border-radius: 0px 0px 10px 10px; 
+}
+
+article > h1 {
+    font-size: 1.8em;
+    font-family: var(--fonte-h2);
+    color: var(--fonteh2cor);
+    font-weight: normal;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, var(--lgradh2), transparent);
+    font-family: var(--fonte-h2);
+    padding-left: 10px;
+    color: var(--fonteh2cor);
+    margin-top: 10px;
+    font-weight: normal;
+} 
+
+article > p{
+    font-size: 1em;
+    padding: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;/*Recuo pós-parágrafo*/
+    line-height: 1.5em;/*Espaçamento entre linhas*/
+}
+
+article > a{
+    
+    font-style: italic;
+    color: black;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+}
+ 
+aside {
+    margin-right: 30px;
+    font-size: 1em;
+    border-radius:15px;
+    text-align: justify;
+    text-indent: 30px;/*Recuo pós-parágrafo*/
+    line-height: 1.5em;/*Espaçamento entre linhas*/
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.178);
+}
+
+aside > h3 {
+    background-color: #2FA866;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+ul {
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 10px;
+    background-color: var(--cor3);
+    list-style-position: inside;
+    columns: 2;
+    line-height: 2em;
+    list-style-type: '\2714\00A0\00A0'; /*00A0 É O CÓDIGO PARA ESPAÇO.*/
+}
+
+
+footer {
+    text-align: center;
+    background-color: #1A5C38;
+    color: white;
+    margin-top: 5px;
+    font-family: var(--fonte-padrao);
+}
+
+
+
+
