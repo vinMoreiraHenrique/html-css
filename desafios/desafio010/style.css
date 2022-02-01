@@ -152,10 +152,7 @@ nav > a {
     padding: 10px;
     padding-bottom: 10px;
     transition-duration: 0.5s;
-    writing-mode: horizontal-tb;
-    max-inline-size: 4cm;
-    writing-mode: sideways-lr;
-    display: inline-block;
+
     text-align: center;
 }
 
