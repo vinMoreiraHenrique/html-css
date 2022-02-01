@@ -154,7 +154,7 @@ nav > a {
     transition-duration: 0.5s;
     text-align: left;
     display: inline-block;
-    max-inline-size: 25%;
+    max-inline-size: 20%;
 }
 
 nav > a:hover {
