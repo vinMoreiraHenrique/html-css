@@ -148,7 +148,7 @@ nav > a {
     padding: 10.5px;
     transition-duration: 0.5s;
     text-align: start;
-    line-break: loose;
+    columns: 1;
     
 }
 
