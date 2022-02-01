@@ -141,6 +141,7 @@ nav {
     padding-bottom: 0px;
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.459);
     writing-mode: horizontal-tb;
+    text-align: center;
 }
 
 nav > a {
@@ -155,6 +156,7 @@ nav > a {
     max-inline-size: 4cm;
     writing-mode: sideways-lr;
     display: inline-block;
+    text-align: center;
 }
 
 nav > a:hover {
