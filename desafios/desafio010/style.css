@@ -136,7 +136,7 @@ header > p {
 
 nav {
     background-color: var(--cor0);
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.459);
     text-align: center;
 }
@@ -149,6 +149,7 @@ nav > a {
     padding: 10.5px;
     transition-duration: 0.5s;
     text-align: center;
+    line-height: 10px;
 }
 
 nav > a:hover {
