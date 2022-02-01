@@ -137,17 +137,18 @@ header > p {
 nav {
     background-color: var(--cor0);
     padding: 10px;
+    padding-left: 10px;
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.459);
 }
 
-nav > a {
+nav a {
     text-decoration: none;
     color: white;
     font-family: var(--fonte-padrao);
     margin-right: 10px;
     padding: 10.5px;
     transition-duration: 0.5s;
-    text-align: center;
+    width:1cm;
 }
 
 nav > a:hover {
