@@ -150,10 +150,6 @@ nav > a {
     text-align: start;
 }
 
-nav > a.dupla {
-    text-align: center;
-}
-
 nav > a:hover {
     font-family: var(--fonte-padrao);
     background-color: var(--cor2);
