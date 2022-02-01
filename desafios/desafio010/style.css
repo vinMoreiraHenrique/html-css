@@ -137,38 +137,45 @@ header > p {
 nav {
     background-color: var(--cor0);
     padding: 10px;
-    padding-left: 10px;
     padding-bottom: 0px;
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.459);
-    writing-mode: horizontal-tb;
+    
     text-align: justify;
+    
+    
+    ht: 100%;
 }
 
 nav > a {
     text-decoration: none;
     color: white;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-h2);
+    font-weight: normal;
     margin-right: 10px;
-    padding: 10px;
-    padding-bottom: 0px;
-    transition-duration: 0.5s;
-    text-align: left;
+    margin-left: 5px;
+    padding-bottom: 20px;
+    text-align: center;
     display: inline-block;
-    
 }
 
 nav > a.dupla {
-    max-inline-size: 15%;
+    max-inline-size: 17%;
 }
 
 nav > a:hover {
-    font-family: var(--fonte-padrao);
     background-color: var(--cor2);
     color: black;
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
+    transition: 0.5s;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+    
     
 }
+
 
 
 a {
