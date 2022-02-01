@@ -150,10 +150,12 @@ nav > a {
     font-family: var(--fonte-padrao);
     margin-right: 10px;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     transition-duration: 0.5s;
-
+    justify-content: center;
     text-align: center;
+    display: inline-block;
+    max-inline-size: 50%;
 }
 
 nav > a:hover {
