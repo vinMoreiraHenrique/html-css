@@ -152,10 +152,9 @@ nav > a {
     padding: 10px;
     padding-bottom: 0px;
     transition-duration: 0.5s;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
     display: inline-block;
-    max-inline-size: 50%;
+    max-inline-size: 25%;
 }
 
 nav > a:hover {
