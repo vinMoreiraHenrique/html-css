@@ -152,7 +152,7 @@ nav > a {
     font-family: var(--fonte-h2);
     font-weight: normal;
     margin-right: 10px;
-    padding-bottom: 15px;
+    
     text-align: center;
     display: inline-block;
 }
@@ -167,9 +167,10 @@ nav > a:hover {
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
     transition: 0.5s;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left: 2px;
     padding-right: 2px;
+    padding-bottom: 0px;
     
     
     
