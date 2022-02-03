@@ -1,0 +1,47 @@
+body {
+    background-image: url('imagens/wallpaper001.jpg');
+    background-size: 100px ;
+    background-repeat: no-repeat;
+    
+}
+
+div.quadrado {
+    border: 3px solid;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: lightgrey;
+}
+
+div#q1 {
+    background-color: skyblue;
+    height: 50px;
+
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+div#q3 {
+    background-image: url('imagens/pattern001.png');
+}
+
+div#q1:hover {
+    
+    transition: 2s;
+    height: 150px;
+}
+
+li {
+    width: 50px;
+    font-family: arial;
+}
+
+div#q1 li:hover {
+    background-color: springgreen;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: times new roman;
+}
