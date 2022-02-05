@@ -1,8 +1,9 @@
+@charset "UTF-8";
+
 *{
-    
     margin: 0px;
     padding: 0px;
-    border: 0px;
+    font-size: 1em;
 }
 
 @font-face {
@@ -21,6 +22,12 @@
     --fonte3: 'Sriracha', cursive;
 }
 
+body {
+    min-height: 100%vh;
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}
+
 header {
     text-align: center;
     background-color: black;
@@ -33,13 +40,13 @@ header > h1 {
     font-family: var(--fonte2);
     font-weight: normal;
     font-variant: small-caps;
-    padding-bottom: 0px;
+    
 }
 
  header > p {
     text-align: center;
     padding-top: 0px;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
     font-size: 15px;
     font-family: var(--fonte1);
 }
@@ -51,53 +58,66 @@ main {
 }
 
 article {
-    padding: 15px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 5vw;
+    padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
-    padding-top: 50px;
-    padding-left: 30px;
-    line-height: 2em;
 }
 
+article.normal {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    font-size: 3.5vw;
+}
 
+article.img {
+    background-color: black;
+    color: white;
+}
+
+article.img p {
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 5px;
+    display: inline-block;
+}
 
 article.img#joaninha  {
     background-image: url('imagens/background001.jpg');
     background-attachment: fixed;
     background-size: cover;
-    background-color:rgba(207, 24, 24, 0.288);
-    background-position: right center;  
-    padding-left: 30px;  
-    
+    background-position: right center;      
 }
 
 article.img#livro  {
     background-image: url('imagens/background002.jpg');
     background-attachment: fixed;
     background-size: cover;
-    background-color:rgba(207, 24, 24, 0.288);
-    background-position: right center;
-    
-        
+    background-position: right center;       
 }
 
+/*
 article.img aside {
     background-color: rgba(0, 0, 0, 0.637);
-    margin-right: 44.9vw;
+    
     margin-top: 10vh;
     margin-bottom: 10vh;
-    color: white;
-    display: block;
-    padding: 5px;
+    
+    
     font-weight: lighter;
     line-height: 2em;
+    
+    
 }
+*/
 
 footer {
     text-align: center;
     background-color: black;
     color: white;
-    background-size: 20px;
+    padding: 10px;
     font-family: var(--fonte1);
 
 }
