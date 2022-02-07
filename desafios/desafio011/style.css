@@ -74,27 +74,25 @@ article.normal {
 }
 
 article.img {
-    background-color: black;
-    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.322);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 article.img p {
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.63);
     padding: 5px;
     display: inline-block;
+    color: white;
 }
 
 article.img#joaninha  {
     background-image: url('imagens/background001.jpg');
-    background-attachment: fixed;
-    background-size: cover;
     background-position: right center;      
 }
 
 article.img#livro  {
     background-image: url('imagens/background002.jpg');
-    background-attachment: fixed;
-    background-size: cover;
     background-position: right center;       
 }
 
